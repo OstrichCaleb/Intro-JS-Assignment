@@ -1,8 +1,9 @@
 console.log("Introdcution to JavaScript");
+
 fizzBuzz();
-console.log(countBs("BabBoon")); // 2
-console.log(countBs("BumBleBee")); // 3
-console.log(countBs("Basoon")); // 1
+testCountBs();
+testCountChar();
+
 
 function fizzBuzz()
 {
@@ -30,4 +31,31 @@ function countBs(word)
     }
     
     return count;
+}
+
+function countChar(word, letter)
+{
+    var count = 0;
+    
+    for (var i = 0; i < word.length - 1; i++)
+    {
+        if (word.charAt(i) == letter)
+            count++;
+    }
+    
+    return count;
+}
+
+function testCountBs()
+{
+    console.log(countBs("Basoon")); // 1
+    console.log(countBs("BabBoon")); // 2
+    console.log(countBs("BumBleBee")); // 3
+}
+
+function testCountChar()
+{
+    console.log(countChar("Dog", "o")); // 1
+    console.log(countChar("BabBoon", "B")); // 2
+    console.log(countChar("AAligAtor", "A")); // 3
 }
