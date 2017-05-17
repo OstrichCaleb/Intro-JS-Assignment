@@ -1,5 +1,8 @@
 console.log("Introdcution to JavaScript");
 fizzBuzz();
+console.log(countBs("BabBoon")); // 2
+console.log(countBs("BumBleBee")); // 3
+console.log(countBs("Basoon")); // 1
 
 function fizzBuzz()
 {
@@ -14,4 +17,17 @@ function fizzBuzz()
         else
             console.log(i);
     }
+}
+
+function countBs(word)
+{
+    var count = 0;
+    
+    for (var i = 0; i < word.length - 1; i++)
+    {
+        if (word.charAt(i) == "B")
+            count++;
+    }
+    
+    return count;
 }
