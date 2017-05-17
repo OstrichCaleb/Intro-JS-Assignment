@@ -20,6 +20,7 @@ function fizzBuzz()
     }
 }
 
+/*
 function countBs(word)
 {
     var count = 0;
@@ -31,6 +32,12 @@ function countBs(word)
     }
     
     return count;
+}
+*/
+
+function countBs(word)
+{
+    return countChar(word, "B");
 }
 
 function countChar(word, letter)
